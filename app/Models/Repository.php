@@ -31,14 +31,14 @@ interface Repository
     public function findOneBy(array $criteria): ?Model;
 
     /**
-     * @param array      $criteria
-     * @param array|null $orderBy
-     * @param int|null   $limit
-     * @param int|null   $offset
+     * @param array    $criteria
+     * @param array    $orderBy
+     * @param int|null $limit
+     * @param int|null $offset
      *
      * @return Collection
      */
-    public function findBy(array $criteria = [], array $orderBy = null, int $limit = null, int $offset = null): Collection;
+    public function findBy(array $criteria = [], array $orderBy = [], int $limit = null, int $offset = null): Collection;
 
     /**
      * @param Model $model
